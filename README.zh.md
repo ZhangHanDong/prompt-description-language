@@ -25,7 +25,7 @@ PDL (Prompt Description Language) 格式提供了一种可扩展的方式来描�
 - [ai_tutor.pdl](./templates/ai_tutor.pdl)
 - [使用 `.` 代替 `{...}` 定义层次结构 ： ai_tutor_dot.pdl](./templates/ai_tutor_dot.pdl)
 
-使用 [PDL 编译器](./pdl_compiler/README.md) [概念验证阶段]:
+使用 [PDL 编译器](./pdl_-ompiler/README.md) [概念验证阶段]:
 
 - 解析 PDL 格式文件.
 - 处理 PDL 格式为最优 tokens 数.

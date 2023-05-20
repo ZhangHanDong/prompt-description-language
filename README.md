@@ -22,7 +22,7 @@ PDL (Prompt Description Language) format provides an extensible way to describe 
 - [ai_tutor.pdl](./templates/ai_tutor.pdl)
 - [Using `.` to define hierarchical structures instead of `{...}` : ai_tutor_dot.pdl](./templates/ai_tutor_dot.pdl)
 
-Use [PDL Compiler](./pdl_compiler/README.md) [POC]:
+Use [PDL Compiler](./pdl-compiler/README.md) [POC]:
 - Parsing files in PDL format.
 - Processing PDL format to minimize its tokens.
 
