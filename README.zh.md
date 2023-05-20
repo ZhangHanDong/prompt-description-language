@@ -1,4 +1,6 @@
-# 提示描述语言（Prompt Description Language） (V0.1.1)
+# 提示描述语言（Prompt Description Language） (V0.1.1 POC)
+
+> 概念验证阶段
 
 ## 说明
 

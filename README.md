@@ -1,4 +1,4 @@
-# Prompt Description Language (V0.1.1)
+# Prompt Description Language (V0.1.1 POC)
 
 ## Description
 
