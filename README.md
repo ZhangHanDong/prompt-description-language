@@ -1,4 +1,4 @@
-# Prompt Description Language
+# Prompt Description Language (V0.1.1)
 
 ## Description
 
@@ -22,6 +22,11 @@ PDL (Prompt Description Language) format provides an extensible way to describe 
 - [ai_tutor.pdl](./templates/ai_tutor.pdl)
 - [Using `.` to define hierarchical structures instead of `{...}` : ai_tutor_dot.pdl](./templates/ai_tutor_dot.pdl)
 
+Use [PDL Compiler](./pdl_compiler/README.md) [POC]:
+- Parsing files in PDL format.
+- Processing PDL format to minimize its tokens.
+
+## Example
 
 ```pdl
 ai_tutor {
@@ -85,8 +90,6 @@ ai_tutor {
   init ["As an AI tutor, greet + 👋 + version+  author + execute format <configuration> + ask for student's preferences + mention /language"],
 }
 ```
-
-
 
 
 ## TODO
