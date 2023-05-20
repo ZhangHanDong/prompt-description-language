@@ -15,6 +15,12 @@ PDL (Prompt Description Language) 格式提供了一种可扩展的方式来描�
     - Key: {'1/3': 'v1', '2/3': 'v2', '3/3': 'v3'}
 - `Key [ v1, v2, ...]`，用于定义序列
 
+> ChatGPT 可以识别 pdl 格式，无需额外的 prompt。
+
+## 使用案例
+
+- [ai_tutor.pdl](./templates/ai_tutor.pdl)
+
 ## TODO
 
 尽管它在设计上具有一定的优点，但仍然存在一些可能的缺陷或者限制：

@@ -15,6 +15,13 @@ PDL (Prompt Description Language) format provides an extensible way to describe 
     - Key: {'1/3': 'v1', '2/3': 'v2', '3/3': 'v3'}
 - `Key [ v1, v2, ...]`, used to define a sequence.
 
+> ChatGPT is capable of recognizing PDL format without the need for additional prompts.
+
+## Usage Case
+
+- [ai_tutor.pdl](./templates/ai_tutor.pdl)
+
+
 ## TODO
 
 Despite its advantages in design, PDL still has some potential drawbacks or limitations:
