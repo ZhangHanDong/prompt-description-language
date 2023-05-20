@@ -14,13 +14,13 @@ PDL (Prompt Description Language) format provides an extensible way to describe 
     - Key: {k1: 'v1', k2: 'v2', k3: 'v3', ...}
     - Key: {'1/3': 'v1', '2/3': 'v2', '3/3': 'v3'}
 - `Key [ v1, v2, ...]`, used to define a sequence.
-
+- `SuperKey.SubKey` allows using `.` instead of `{...}` to define the hierarchy of a structure, which **saves tokens more efficiently**.
 > ChatGPT is capable of recognizing PDL format without the need for additional prompts.
 
 ## Usage Case
 
 - [ai_tutor.pdl](./templates/ai_tutor.pdl)
-
+- [Using `.` to define hierarchical structures instead of `{...}` : ai_tutor_dot.pdl](./templates/ai_tutor_dot.pdl)
 
 ## TODO
 
