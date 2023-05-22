@@ -2,8 +2,11 @@
 
 This crate is used for:
 
-- 解析 PDL 格式文件.
-- 处理 PDL 格式为最优 tokens 数.
+- 解析 PDL 格式文件，用于验证配置文件格式正确性（TODO）。
+- Rust 序列化反序列化支持（TODO）。
+- 编译：
+    - 处理 PDL 格式为最优 tokens 数。
+    - 支持模块化（TODO）
 
 ## 使用:
 
