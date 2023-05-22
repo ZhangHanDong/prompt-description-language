@@ -6,7 +6,7 @@ PDL (Prompt Description Language) format provides an extensible way to describe 
 
 ## Basic Syntax Description
 
-- `#`, used for comments. **Comments should not be considered part of the prompt**.
+- `# ... #`, used for comments. **Comments should not be considered part of the prompt**.
 - `Key { ... }`, used to define a structure where multiple `Key: Value` key-value pairs can be added as members. Structures are used to organize the overall structure of the PDL file.
 - In `Key: Value` key-value pairs, the Key generally does not need to be enclosed in quotes (unless it contains other special characters, in which case single or double quotes can be used). Value can take the following forms:
     - Key: "value"

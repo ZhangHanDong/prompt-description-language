@@ -6,9 +6,13 @@
 
 PDL (Prompt Description Language) 格式提供了一种可扩展的方式来描述 Prompt 的行为和特性。参考 `json/yaml/toml/markdown`设计，相比于 `json/yaml/toml/markdown`，可以最大化节省 Token 数量。
 
+PDL 作为一种 GPT 可识别的描述语言，专门用于描述成体系的模版化规范化的 Prompt，或可作为某种 Prompt 引擎的描述语言。
+
+然而，PDL 也具备通用性，可用于一般的编程实践中，但是需要完善配套工具和文档。
+
 ## 语法基本描述
 
-- `#` ，用于注释。**注释部分不应作为 Prompt 的一部分**。
+- `#...#`，配对的 `#` 用于注释，只是为了作为人类可读。 PDL Compiler 在生成最终 prompt 之后会将注释擦除，**注释不会成为 Prompt 的一部分**。
 - `Key { ... }`，用于定义结构体，内部可以添加多个`Key: Value` 键值对成员。结构体用于组织 pdl 文件整体结构。
 - `Key: Value` 键值对中，Key 一般无需使用引号（如果key中包含其他特殊符号可以使用单引号或双引号），Value 可以是以下形式：
     - Key: "value"
@@ -20,6 +24,9 @@ PDL (Prompt Description Language) 格式提供了一种可扩展的方式来描�
 - `Key` 有两类，代表不同语义：
     - 符号`Key`，即未被引号包裹的`Key`，代表静态配置。例如 `Meta { name: "Alex"}`。
     - 字符串 `"Key"`，即被引号包裹的`Key`，代表动态配置，可以被修改。例如 `Command ["start", "plan"]`。
+- `Value` 可以设置为被替换和默认值：
+    - Value中包含在 `<>` 内部的可以被替换，比如 `"<Default>"`，表示这个 Value 要么是被替换的值，要么是默认值`Default`。
+- 模块化和引用变量。使用符号 `@`来创建模块和引用变量。示例参考：[一个 Prompt 将 ChatGPT 打造为学习和翻译助手 ：Mr.Trans](https://github.com/Illumine-Labs/Mr.trans)
 
 > ChatGPT 可以识别 pdl 格式，无需额外的 prompt。
 
@@ -47,7 +54,9 @@ PDL (Prompt Description Language) 格式提供了一种可扩展的方式来描�
 
 功能：
 
-- 模块化
+- 编辑器高亮支持
+- PDL Compiler
+- 文档完善
 
 尽管它在设计上具有一定的优点，但仍然存在一些可能的缺陷或者限制：
 
