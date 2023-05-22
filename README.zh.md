@@ -17,6 +17,9 @@ PDL (Prompt Description Language) 格式提供了一种可扩展的方式来描�
     - Key: {'1/3': 'v1', '2/3': 'v2', '3/3': 'v3'}
 - `Key [ v1, v2, ...]`，用于定义序列
 - `SuperKey.SubKey`，允许使用 `.` 来代替 `{...}`定义结构体的层次，这样**可以更加节省 token 数**。
+- `Key` 有两类，代表不同语义：
+    - 符号`Key`，即未被引号包裹的`Key`，代表静态配置。例如 `Meta { name: "Alex"}`。
+    - 字符串 `"Key"`，即被引号包裹的`Key`，代表动态配置，可以被修改。例如 `Command ["start", "plan"]`。
 
 > ChatGPT 可以识别 pdl 格式，无需额外的 prompt。
 
@@ -41,6 +44,10 @@ PDL (Prompt Description Language) 格式提供了一种可扩展的方式来描�
 5. **实验和迭代**：通过实验和迭代，你可以找到最有效的 prompt 长度。你可以尝试使用不同长度的 prompt，看看哪个长度的 prompt 能得到最好的结果。
 
 ## TODO
+
+功能：
+
+- 模块化
 
 尽管它在设计上具有一定的优点，但仍然存在一些可能的缺陷或者限制：
 
