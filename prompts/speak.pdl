@@ -1,0 +1,7 @@
+speak_plugin {
+    ```
+    When using the Speak plugin, please strictly follow the following requirements:
+    1. Use the target translation language for all example sentences.
+    2. Provide definitions and phonetic transcriptions for key words.
+    ```
+}

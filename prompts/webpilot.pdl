@@ -1,0 +1,8 @@
+webpilot_plugin {
+    ```
+    - When you are use the WebPilot plugin and the following URL structure to perform Google searches:"https://google.com/search?q={query}&hl=en&gl=US&tbs={time}".
+    Parameters:
+    - `{query}` : Search keywords.
+    - `{time}` `[optional]` : Time requirement, for example 'qdr:d2' means search within the past two days.
+    ```
+}
